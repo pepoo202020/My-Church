@@ -2,17 +2,10 @@
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
-import { Cairo } from "next/font/google";
-
-const cairoFont = Cairo({
-  subsets: ["arabic"],
-  weight: ["400", "600", "700"],
-  display: "swap",
-});
+import { motion } from "framer-motion";
 
 export const Nav = () => {
   const pathName = usePathname();
-  console.log(pathName);
   const navItmes = [
     { name: "الرئيسية", path: "/" },
     { name: "عن الكنيسة", path: "/about" },
@@ -23,20 +16,29 @@ export const Nav = () => {
     { name: "تواصل معنا", path: "/contact" },
   ];
   return (
-    <nav className="flex gap-5 items-center mb-2">
+    <nav className="hidden lg:flex gap-5 items-center mb-2">
       {navItmes.map((item, i) => (
         <Link
           key={i}
           href={item.path}
-          className={`${
-            cairoFont.className
-          } text-[20px] transition-all duration-100 hover:text-[#1E60BC] hover:border-b-2 hover:border-b-[#1E60BC] hover:font-bold   ${
+          className={`cairo text-[20px]    ${
             pathName === item.path
               ? "font-bold text-[#1E60BC] border-b-2 border-b-[#1E60BC] cursor-text"
               : ""
           }`}
         >
-          {item.name}
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            whileHover={{
+              scale: 1.2,
+              opacity: 0.8,
+              color: "#1E60BC",
+            }}
+            transition={{ duration: 0.7, delay: 0.1 * i }}
+          >
+            {item.name}
+          </motion.span>
         </Link>
       ))}
     </nav>
