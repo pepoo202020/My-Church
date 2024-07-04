@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className="w-screen max-w-screen overflow-x-hidden px-10 flex flex-col h-screen">
+      <body className="flex flex-col overflow-x-hidden">
         <Header />
         {children}
         <Footer />

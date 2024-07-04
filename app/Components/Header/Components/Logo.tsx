@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 const lalezarFont = Lalezar({
-  subsets: ["latin", "arabic"],
+  subsets: ["arabic"],
   weight: ["400"],
   display: "swap",
 });
@@ -23,7 +23,7 @@ export const Logo = () => {
           alt="church logo image"
           width={134}
           height={127}
-          className="drop-shadow-lg w-[134px] h-[127px]"
+          className="drop-shadow-lg w-[124px] h-[117px]"
         />
       </div>
       <div className="flex flex-col items-start justify-center gap-0">
