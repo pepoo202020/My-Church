@@ -24,7 +24,7 @@ export const HeroSection = () => {
         <h1 className="almarai lg:text-[99px] text-[53px] lg:font-extrabold font-bold">
           مرحباً بكم
         </h1>
-        <h1 className="lg:changa lemonada lg:text-[53px] text-[18px] font-bold text-center ">
+        <h1 className="lemonada lg:text-[40px] text-[18px] font-bold text-center ">
           الموقع <span className="text-[#FAFF00]">الرسمي</span> لكنيسة الشهيد
           ابادير واخته الشهيده ايريني
         </h1>

@@ -1,15 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BirthDate } from "./Components/BirthDate";
 import { CopticDate } from "./Components/CopticDate";
 import { Logo } from "./Components/Logo";
 import { Nav } from "./Components/Nav";
 import { MenuToggle } from "./Components/MenuToggle";
-import { useCycle, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { SideBar } from "./Components/SideBar";
 
 export const Header = () => {
   const [isOpen, toggleOpen] = useState(false);
+
   const tapsClickHandler = () => {
     toggleOpen((pre) => !pre);
   };
