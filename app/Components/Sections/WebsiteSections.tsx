@@ -55,8 +55,8 @@ export const WebsiteSections = () => {
       ref={sectionsRef}
     >
       <motion.h1
-        className="almarai text-[51px] text-[#1E60BC] font-extrabold"
-        initial={{ opacity: 0, x: -500 }}
+        className="almarai lg:text-[51px] text-[38px] text-[#1E60BC] font-extrabold"
+        initial={{ opacity: 0, x: 500 }}
         animate={
           isInView
             ? { opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.1 } }
