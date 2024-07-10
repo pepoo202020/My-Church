@@ -10,7 +10,14 @@ export const HeroSection = () => {
           alt="hero bg"
           width={1506}
           height={871}
-          className="bg-cover w-full"
+          className="bg-cover w-full hidden lg:block"
+        />
+        <Image
+          src={"/image/bgMobile.png"}
+          alt="hero bg"
+          width={430}
+          height={869}
+          className="bg-cover w-full block lg:hidden"
         />
       </div>
     </div>

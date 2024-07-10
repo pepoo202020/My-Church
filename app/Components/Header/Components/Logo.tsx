@@ -21,10 +21,14 @@ export const Logo = () => {
         />
       </div>
       <div className="flex flex-col items-center lg:items-start justify-center gap-0">
-        <div className={`lalezar-regular lg:text-[30px] text-[15px] `}>
+        <div
+          className={`lalezar-regular lg:text-[30px] text-[10px] sm:text-[12px] text-center`}
+        >
           كنيسة الشهيد ابادير واخته الشهيده ايريني بأسيوط
         </div>
-        <div className={`arbutus-regular text-[12px] lg:text-[20px]`}>
+        <div
+          className={`arbutus-regular text-[10px] sm:text-[12px] lg:text-[20px] text-center`}
+        >
           Martyr Abader And Eriny. Asyut
         </div>
       </div>

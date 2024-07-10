@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { BirthDate } from "./BirthDate";
+import { CopticDate } from "./CopticDate";
 
 const sidebarVariants = {
   open: {
@@ -109,6 +111,10 @@ export const SideBar = ({ tapOpen }: { tapOpen: () => void }) => {
       className="absolute w-screen h-screen z-50 bg-black/50 flex flex-col items-center justify-center gap-5"
     >
       {renderMenuTabs(pathName, itemClickedHandler)}
+      <div className="w-full absolute z-[9999] bottom-2 right-0 px-2 text-white flex items-center justify-between">
+        <BirthDate />
+        <CopticDate />
+      </div>
     </motion.div>
   );
 };

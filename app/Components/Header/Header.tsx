@@ -29,7 +29,7 @@ export const Header = () => {
         <Nav />
       </header>
       <motion.div
-        className="absolute lg:hidden block z-[999] top-0 left-5"
+        className="fixed lg:hidden block z-[999] top-0 left-5"
         initial={false}
         animate={isOpen ? "open" : "closed"}
       >
